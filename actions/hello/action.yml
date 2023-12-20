@@ -1,0 +1,14 @@
+name: Hello action
+description: Say hello
+inputs:
+  message:
+    description: Message used to say hello
+    required: false
+    default: Hello world!
+
+runs:
+  using: "composite"
+  steps:
+    - name: Say hello
+      shell: bash
+      run: echo ${{ inputs.message }}
