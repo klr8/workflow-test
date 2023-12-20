@@ -1,0 +1,13 @@
+name: Build main branch
+
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+jobs:
+  build-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        uses: JE50660_kbcgroup/workflow_test/actions/hello@main
