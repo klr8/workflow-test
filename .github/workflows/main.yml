@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        uses: klr8/workflow_test/actions/hello@main
+        uses: klr8/workflow-test/actions/hello@main
